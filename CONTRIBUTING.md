@@ -40,21 +40,44 @@ Synda uses [uv](https://github.com/astral-sh/uv) for dependency management and v
 # Run all tests
 make test
 
+# Run tests with coverage
+make test-cov
+
 # Or manually
 python -m pytest tests/
+python -m pytest --cov=synda tests/
 ```
 
-### Code Formatting
+### Code Formatting and Linting
 
-We use Black for code formatting:
+We use Black for code formatting and Ruff for linting:
 
 ```bash
 # Format code
 make format
 
+# Check formatting
+make format-check
+
+# Run linter
+make lint
+
 # Or manually
 python -m black synda/ tests/
+python -m black --check synda/ tests/
+python -m ruff check synda/ tests/
 ```
+
+### Continuous Integration
+
+We use GitHub Actions for continuous integration. The following workflows are available:
+
+- **Test**: Runs tests on multiple Python versions and operating systems
+- **Code Coverage**: Generates and uploads code coverage reports
+- **Dependency Review**: Scans dependencies for security vulnerabilities
+- **Publish**: Publishes the package to PyPI when a new release is created
+
+These workflows run automatically on push to main and on pull requests.
 
 ### Adding Dependencies
 
