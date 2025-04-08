@@ -1,5 +1,11 @@
 # Synda
 
+[![Test](https://github.com/timothepearce/synda/actions/workflows/test.yml/badge.svg)](https://github.com/timothepearce/synda/actions/workflows/test.yml)
+[![Code Coverage](https://github.com/timothepearce/synda/actions/workflows/coverage.yml/badge.svg)](https://github.com/timothepearce/synda/actions/workflows/coverage.yml)
+[![PyPI version](https://badge.fury.io/py/synda.svg)](https://badge.fury.io/py/synda)
+[![Python Version](https://img.shields.io/pypi/pyversions/synda.svg)](https://pypi.org/project/synda/)
+[![License](https://img.shields.io/github/license/timothepearce/synda.svg)](https://github.com/timothepearce/synda/blob/main/LICENSE)
+
 > [!WARNING]
 > This project is in its very early stages of development and should not be used in production environments.
 
